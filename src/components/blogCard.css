@@ -34,14 +34,28 @@
     padding: 24px 16px;
 }
 
-.card-title{
+.card-title {
     font-size: 26px;
     font-weight: 900;
     margin-bottom: 4px;
 }
 
-.card-category .card-technology .card-framework{
+.card-category .card-technology .card-framework {
     font-size: 12px;
     color: #777;
     margin-bottom: 12px;
+}
+
+.card-link.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #45a049;
+    }
 }
