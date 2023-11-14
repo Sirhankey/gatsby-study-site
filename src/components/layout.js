@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     return (
         <div className="flex flex-col min-h-screen">
             <Header title={data.site.siteMetadata.title} />
-            <div className="flex-1">
+            <div className="container self-center d-flex flex-1">
                 <main className="justify-items-center layout w-full grid bg-gray-500">
                     {children}
                 </main>
