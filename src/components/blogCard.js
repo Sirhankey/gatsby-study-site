@@ -8,6 +8,8 @@ const getCategoryClass = (category) => {
     return 'bg-blue-500 text-white';
   } else if (category === 'Framework') {
     return 'bg-green-500 text-white';
+  } else if (category === 'Technology') {
+    return 'bg-yellow-500 text-white';
   }
   return '';
 };
@@ -19,15 +21,21 @@ const BlogCard = ({ title, category, technology, framework, date, slug, imageSrc
         <img src={imageSrc} alt={title} />
       </div>
       <div className='card-content'>
-        <h2 className='card-title'>{title}</h2>
-        <p className='card-date'>{date}</p>
-        <p className={`card-category ${getCategoryClass(category)}`}>{category}</p>
-        <p className='card-technology'>{technology}</p>
-        <p className='card-framework'>{framework}</p>
-        <div className='card-link-container'>
-          <Link to={`/blog/${slug}`} className='card-link button'>
-            Read more
-          </Link>
+        <div className='card-content-title'>
+          <h2 className='card-title'>{title}</h2>
+          <p className='card-date'>{date}</p>
+        </div>
+        <hr />
+        <div className='card-content-info'>
+          <p className={`card-category ${getCategoryClass(category)}`}>{category}</p>
+          <p className='card-technology'>{technology}</p>
+        </div>
+        <div className='card-content-link'>
+          <div className='card-link-container'>
+            <Link to={`/blog/${slug}`} className='card-link button'>
+              Read more
+            </Link>
+          </div>
         </div>
       </div>
     </div>
