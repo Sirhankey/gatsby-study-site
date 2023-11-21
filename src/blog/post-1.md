@@ -1,6 +1,6 @@
 ---
 title: "Introdução ao Gatsby"
-category: "Framework"
+category: "Technology"
 technology: "React"
 date: "2023-01-01"
 slug: "introducao-ao-gatsby"

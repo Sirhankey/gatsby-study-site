@@ -1,9 +1,10 @@
 ---
 title: "React Hooks: Uma visão geral"
-category: "Language"
+category: "Technology"
+technology: "React"
 date: "2023-02-15"
 slug: "react-hooks-visao-geral"
-imageSrc: "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-transparent-svg-vector-bie-supply-2.png"
+imageSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
 ---
 
 Exploraremos os fundamentos dos React Hooks neste post. Os Hooks foram introduzidos no React 16.8 e oferecem uma maneira mais eficiente e limpa de gerenciar o estado e os efeitos em componentes funcionais.
