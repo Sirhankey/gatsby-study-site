@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/pato-logo.png";
+import { Link } from "gatsby";
 
 // Subcomponente para o botão de colapso
 const CollapseButton = ({ menuOpen, handleToggleMenu }) => (
@@ -35,17 +36,17 @@ const MenuList = ({ menuItems }) => (
     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
         {menuItems.map((item, index) => (
             <li key={index}>
-                <a
-                    href={item.href}
+                {/* Utilize o componente Link para criar links internos */}
+                <Link
+                    to={item.href}
                     className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     {item.label}
-                </a>
+                </Link>
             </li>
         ))}
     </ul>
 );
-
 const Header = (props) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -54,12 +55,9 @@ const Header = (props) => {
     };
 
     const menuItems = [
-        { label: 'Home', href: '#' },
-        { label: 'Company', href: '#' },
-        { label: 'Marketplace', href: '#' },
-        { label: 'Features', href: '#' },
-        { label: 'Team', href: '#' },
-        { label: 'Contact', href: '#' },
+        { label: 'Home', href: '/' },
+        { label: 'Add post', href: '/post' },
+        { label: 'Contact', href: '#' }
     ];
 
     return (
