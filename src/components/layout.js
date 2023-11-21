@@ -1,6 +1,6 @@
 import React from "react"
 import "./layout.css"
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Footer from "./footer"
 import Header from "./header"
 

@@ -23,4 +23,20 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
   ],
+  developMiddleware: app => {
+    app.post('/posts', (req, res) => {
+
+      res.status(200).json({
+        message: 'Requisição POST em /posts foi recebida com sucesso',
+        statusCode: 200,
+      });
+
+      res.status(500).json({
+        message: 'Ocorreu um erro ao processar a requisição POST em /posts',
+        statusCode: 500,
+      });
+
+      res.status(200).json({ message: 'Requisição POST em /posts foi recebida com sucesso' });
+    });
+  },
 };
