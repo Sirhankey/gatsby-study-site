@@ -1,11 +1,11 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import BlogList from "../components/blogList";  // Ajuste o caminho conforme necessário
+import BlogForm from "../components/blogForm";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <BlogList /> 
+      <BlogForm /> 
     </Layout>
   );
 };
@@ -13,4 +13,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Início</title>;
+export const Head = () => <title>Crie seu Post</title>;

@@ -56,8 +56,8 @@ const Header = (props) => {
 
     const menuItems = [
         { label: 'Home', href: '/' },
-        { label: 'Add post', href: '/post' },
-        { label: 'Contact', href: '#' }
+        { label: 'Add post', href: '/posts' },
+        { label: 'Contact', href: '/contact' }
     ];
 
     return (
